@@ -6,6 +6,7 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
+        <compiler_build/>
         <copied_from/>
         <copied_from_name/>
         <description>Challenge: Create Scheduled Flow to Update Overdue NeedIt Tasks</description>
@@ -28,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8798f07807f311100d71ff208c1ed00c</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Scheduled Flow to Update Overdue NeedIt Tasks</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -36,7 +37,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_hub_flow_8798f07807f311100d71ff208c1ed00c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-13 14:31:00</sys_updated_on>
+        <sys_updated_on>2023-02-06 09:04:54</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=8798f07807f311100d71ff208c1ed00c"/>
@@ -132,9 +133,10 @@
     <sys_hub_action_instance action="delete_multiple" query="flow=8798f07807f311100d71ff208c1ed00c^sys_idNOT IN27aef070073711100d71ff208c1ed016,33aef070073711100d71ff208c1ed01e,77aef070073711100d71ff208c1ed025"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Get Property">49401074077311100d71ff208c1ed06e</action_type>
+        <action_type display_value="">49401074077311100d71ff208c1ed06e</action_type>
         <action_type_parent/>
         <comment>Get overdue days limit</comment>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Scheduled Flow to Update Overdue NeedIt Tasks">8798f07807f311100d71ff208c1ed00c</flow>
         <order>1</order>
@@ -162,17 +164,16 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-12-13 14:18:59</sys_updated_on>
         <value>x_58872_needit.autoCloseOverdue</value>
-        <variable display_value="Property">49401074077311100d71ff208c1ed071</variable>
+        <variable display_value="">49401074077311100d71ff208c1ed071</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_49401074077311100d71ff208c1ed06e^id=27aef070073711100d71ff208c1ed016"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=27aef070073711100d71ff208c1ed016"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=27aef070073711100d71ff208c1ed016"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Get Days Ago Date">988154b4077311100d71ff208c1ed069</action_type>
+        <action_type display_value="">988154b4077311100d71ff208c1ed069</action_type>
         <action_type_parent/>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Scheduled Flow to Update Overdue NeedIt Tasks">8798f07807f311100d71ff208c1ed00c</flow>
         <order>2</order>
@@ -200,21 +201,8 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-12-13 14:18:59</sys_updated_on>
         <value/>
-        <variable display_value="Days ago">988154b4077311100d71ff208c1ed06c</variable>
+        <variable display_value="">988154b4077311100d71ff208c1ed06c</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=33aef070073711100d71ff208c1ed01e"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>days_ago</field>
-        <id>33aef070073711100d71ff208c1ed01e</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-13 14:18:59</sys_created_on>
-        <sys_id>37aef070073711100d71ff208c1ed01f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-13 14:18:59</sys_updated_on>
-        <table>var__m_sys_hub_action_input_988154b4077311100d71ff208c1ed069</table>
-        <value>{{10889c3d-69a3-4ecb-aa83-e8a77c3bc8d8.property_value}}</value>
-    </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=33aef070073711100d71ff208c1ed01e"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=33aef070073711100d71ff208c1ed01e"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
@@ -223,6 +211,7 @@
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent/>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Scheduled Flow to Update Overdue NeedIt Tasks">8798f07807f311100d71ff208c1ed00c</flow>
         <order>3</order>
@@ -285,10 +274,9 @@
         <display_text/>
         <flow display_value="Scheduled Flow to Update Overdue NeedIt Tasks">8798f07807f311100d71ff208c1ed00c</flow>
         <inputs/>
-        <inputs/>
         <order>5</order>
         <parent_ui_id>8d2f0dc7-ae04-431b-a8c0-8431006a6754</parent_ui_id>
-        <subflow display_value="Handle Overdue NeedIt Tasks">bc85b8f407f311100d71ff208c1ed013</subflow>
+        <subflow display_value="">bc85b8f407f311100d71ff208c1ed013</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -315,43 +303,6 @@
         <value>1</value>
         <variable display_value="Wait For Completion">77aef070073711100d71ff208c1ed02d</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=ffaef070073711100d71ff208c1ed02b"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>needit_task</field>
-        <id>ffaef070073711100d71ff208c1ed02b</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-13 14:19:02</sys_created_on>
-        <sys_id>2cbef070073711100d71ff208c1ed089</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-13 14:19:02</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_bc85b8f407f311100d71ff208c1ed013</table>
-        <value>{{8d2f0dc7-ae04-431b-a8c0-8431006a6754.item}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>reason</field>
-        <id>ffaef070073711100d71ff208c1ed02b</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-13 14:19:02</sys_created_on>
-        <sys_id>68bef070073711100d71ff208c1ed089</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-13 14:19:02</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_bc85b8f407f311100d71ff208c1ed013</table>
-        <value>Task record: {{8d2f0dc7-ae04-431b-a8c0-8431006a6754.item.number}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>ffaef070073711100d71ff208c1ed02b</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-13 14:19:03</sys_created_on>
-        <sys_id>e4bef070073711100d71ff208c1ed08a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-13 14:19:03</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_ffaef070073711100d71ff208c1ed02b</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_ffaef070073711100d71ff208c1ed02b^id=ffaef070073711100d71ff208c1ed02b"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=ffaef070073711100d71ff208c1ed02b^sys_idNOT IN77aef070073711100d71ff208c1ed02d"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -618,10 +569,10 @@
     <sys_hub_action_instance action="delete_multiple" query="flow=ec410134073711100d71ff208c1ed03c^sys_idNOT IN05410134073711100d71ff208c1ed077,0d410134073711100d71ff208c1ed07e,78410134073711100d71ff208c1ed06f"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Get Days Ago Date">988154b4077311100d71ff208c1ed069</action_type>
-        <action_type_parent display_value="Get Days Ago Date">db60d074077311100d71ff208c1ed075</action_type_parent>
+        <action_type display_value="">988154b4077311100d71ff208c1ed069</action_type>
+        <action_type_parent display_value="">db60d074077311100d71ff208c1ed075</action_type_parent>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Scheduled Flow to Update Overdue NeedIt Tasks">ec410134073711100d71ff208c1ed03c</flow>
         <order>2</order>
@@ -649,21 +600,8 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-12-13 14:30:16</sys_updated_on>
         <value/>
-        <variable display_value="Days ago">988154b4077311100d71ff208c1ed06c</variable>
+        <variable display_value="">988154b4077311100d71ff208c1ed06c</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=05410134073711100d71ff208c1ed077"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>days_ago</field>
-        <id>05410134073711100d71ff208c1ed077</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-13 14:30:16</sys_created_on>
-        <sys_id>45410134073711100d71ff208c1ed078</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-13 14:30:16</sys_updated_on>
-        <table>var__m_sys_hub_action_input_988154b4077311100d71ff208c1ed069</table>
-        <value>{{10889c3d-69a3-4ecb-aa83-e8a77c3bc8d8.property_value}}</value>
-    </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=05410134073711100d71ff208c1ed077"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=05410134073711100d71ff208c1ed077"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
@@ -672,6 +610,7 @@
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Scheduled Flow to Update Overdue NeedIt Tasks">ec410134073711100d71ff208c1ed03c</flow>
         <order>3</order>
@@ -730,9 +669,10 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=0d410134073711100d71ff208c1ed07e"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Get Property">49401074077311100d71ff208c1ed06e</action_type>
-        <action_type_parent display_value="Get Property">2e9d04b0077311100d71ff208c1ed05b</action_type_parent>
+        <action_type display_value="">49401074077311100d71ff208c1ed06e</action_type>
+        <action_type_parent display_value="">2e9d04b0077311100d71ff208c1ed05b</action_type_parent>
         <comment>Get overdue days limit</comment>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Scheduled Flow to Update Overdue NeedIt Tasks">ec410134073711100d71ff208c1ed03c</flow>
         <order>1</order>
@@ -760,9 +700,8 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-12-13 14:30:16</sys_updated_on>
         <value>x_58872_needit.autoCloseOverdue</value>
-        <variable display_value="Property">49401074077311100d71ff208c1ed071</variable>
+        <variable display_value="">49401074077311100d71ff208c1ed071</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_49401074077311100d71ff208c1ed06e^id=78410134073711100d71ff208c1ed06f"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=78410134073711100d71ff208c1ed06f"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=78410134073711100d71ff208c1ed06f"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=ec410134073711100d71ff208c1ed03c^sys_idNOT INc9410134073711100d71ff208c1ed082"/>
@@ -771,10 +710,9 @@
         <display_text/>
         <flow display_value="Scheduled Flow to Update Overdue NeedIt Tasks">ec410134073711100d71ff208c1ed03c</flow>
         <inputs/>
-        <inputs/>
         <order>5</order>
         <parent_ui_id>8d2f0dc7-ae04-431b-a8c0-8431006a6754</parent_ui_id>
-        <subflow display_value="Handle Overdue NeedIt Tasks">bc85b8f407f311100d71ff208c1ed013</subflow>
+        <subflow display_value="">bc85b8f407f311100d71ff208c1ed013</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -801,43 +739,6 @@
         <value>1</value>
         <variable display_value="Wait For Completion">89410134073711100d71ff208c1ed083</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=c9410134073711100d71ff208c1ed082"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>needit_task</field>
-        <id>c9410134073711100d71ff208c1ed082</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-13 14:30:18</sys_created_on>
-        <sys_id>d5410134073711100d71ff208c1ed097</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-13 14:30:18</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_bc85b8f407f311100d71ff208c1ed013</table>
-        <value>{{8d2f0dc7-ae04-431b-a8c0-8431006a6754.item}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>reason</field>
-        <id>c9410134073711100d71ff208c1ed082</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-13 14:30:18</sys_created_on>
-        <sys_id>15410134073711100d71ff208c1ed097</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-13 14:30:18</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_bc85b8f407f311100d71ff208c1ed013</table>
-        <value>Task record: {{8d2f0dc7-ae04-431b-a8c0-8431006a6754.item.number}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>c9410134073711100d71ff208c1ed082</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-13 14:30:18</sys_created_on>
-        <sys_id>d1410134073711100d71ff208c1ed098</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-13 14:30:18</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_c9410134073711100d71ff208c1ed082</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_c9410134073711100d71ff208c1ed082^id=c9410134073711100d71ff208c1ed082"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=c9410134073711100d71ff208c1ed082^sys_idNOT IN89410134073711100d71ff208c1ed083"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -975,9 +876,8 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ec410134073711100d71ff208c1ed03c"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ec410134073711100d71ff208c1ed03c"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ec410134073711100d71ff208c1ed03c"/>
-    <sys_hub_flow action="UPDATE">
+    <sys_hub_flow action="update">
         <sys_id>8798f07807f311100d71ff208c1ed00c</sys_id>
         <latest_snapshot>ec410134073711100d71ff208c1ed03c</latest_snapshot>
-        <compiler_build/>
     </sys_hub_flow>
 </record_update>
